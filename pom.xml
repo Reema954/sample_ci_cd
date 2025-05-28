@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.4.0-20250423</app.runtime>
-		<mule.maven.plugin.version>3.9.1</mule.maven.plugin.version>
+		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -31,11 +31,11 @@
 				<extensions>true</extensions>
 				<configuration>
 					<deployment>
-						<provider>ch2</provider>
+						<provider>MC</provider>
 						<target>Cloudhub-US-East-2</target>
 						<environment>Sandbox</environment>
 						<applicationName>${project.artifactId}</applicationName>
-						<runtimeVersion>4.4.0</runtimeVersion>
+						<muleVersion>4.4.0</muleVersion>
 						<replicas>1</replicas>
 					</deployment>
 					<anypointPlatformCredentials>
