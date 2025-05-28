@@ -32,13 +32,13 @@
 				<configuration>
 					<deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<provider>MC</provider>
+						<provider>ch2</provider>
 						<target>Cloudhub-US-East-2</target>
 						<environment>Sandbox</environment>
 						<applicationName>${project.artifactId}</applicationName>
 						<runtimeVersion>4.4.0</runtimeVersion>
 						<replicas>1</replicas>
-						<vCores>0.1<vCores>
+						<vCores>0.1</vCores>
 					</deployment>
 					<anypointPlatformCredentials>
 						<username>${anypoint.username}</username>
