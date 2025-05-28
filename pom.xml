@@ -37,10 +37,11 @@
 						<password>${anypoint.password}</password>
 						<applicationName>${project.artifactId}</applicationName>
 						<replicas>1</replicas>
-						<vCores>1</vCores>
+						<vCores>0.1</vCores>
 						<deploymentSettings>
 							<http>
 								<inbound>
+									<publicUrl>https://simple_ci_cd.anypoint.com</publicUrl>
 									<forwardSslSession>true</forwardSslSession>
 									<lastMileSecurity>true</lastMileSecurity>
 								</inbound>
