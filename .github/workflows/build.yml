@@ -18,6 +18,8 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
+    - name: Build Mule App
+      run: mvn clean package -DmuleDeploy
 
-    - name: Build & Deploy to CloudHub
-      run: mvn clean deploy -DmuleDeploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -e -X
+    - name: Deploy to CloudHub
+      run: mvn mule:deploy -Danypoint.username=${{ secrets.ANYPOINT_USERNAME }} -Danypoint.password=${{ secrets.ANYPOINT_PASSWORD }} -e -X
