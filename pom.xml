@@ -4,7 +4,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mycompany</groupId>
-	<artifactId>sample_cicd</artifactId>
+	<artifactId>samplecicd</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 	<name>sample_ci_cd</name>
@@ -35,7 +35,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>mulesample210</username>
 						<password>Monika@54321</password>
-						<applicationName>sample_ci_cd</applicationName>
+						<applicationName>samplecicd</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
